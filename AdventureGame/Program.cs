@@ -4,10 +4,18 @@ namespace AdventureGame
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        //string CharacterName = "";
+        static void Main()        {
+
+            string CharacterName = "Lemony Snickett";
+
             Console.WriteLine("Adventure Game!");
-            Console.ReadKey();
+            Console.WriteLine("Welcome to my game...");
+            Console.WriteLine("What would you like your character's name to be?");
+            CharacterName = Console.ReadLine();
+            Console.WriteLine("Great! Your character is now named " + CharacterName);
+
+            Console.Read();
 
         }
     }
